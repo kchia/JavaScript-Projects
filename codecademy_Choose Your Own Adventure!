@@ -1,4 +1,4 @@
-// Check if the user is ready to play!
+// Check if the user is ready to play! This is a simple Justin Bieber-themed game that generates responses that vary with the user's input, using if/else statements.
 confirm ("I am ready to play!")
 
 var age = prompt("What's your age?")
