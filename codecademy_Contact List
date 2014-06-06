@@ -1,0 +1,34 @@
+//This project combines knowlege of objects and arrays to create a simple contact list. 
+
+var friends = {
+    bill: {
+        firstName: "Bill",
+        lastName: "Bryson",
+        number: "450-242-1412",
+        address: ["241 Church Street", "Apt 5", "SF", 94114]
+        },
+    steve: {
+        firstName: "Steve",
+        lastName: "Carell",
+        number: "345-234-6354",
+        address: ["242 Church Street", "Apt 5", "SF", 94114]
+        },
+};
+
+var list = function(friends){
+    for (var firstName in friends){
+        console.log(firstName);
+    }
+};
+
+var search = function(name){
+    for (var firstName in friends) {
+        if (friends[firstName].firstName === name){
+            console.log(friends[firstName]);
+            return friends[firstName];
+        }
+        else {
+            console.log("Not found!");
+        }
+    }
+}
