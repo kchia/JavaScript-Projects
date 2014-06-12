@@ -1,0 +1,35 @@
+//This projet creates a canvas element to draw on a web page using JavaScript and HTML5
+
+
+//index.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's Draw!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+    </head>
+    <body>
+        <canvas id="canvas" width="200" height="200">
+            This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+        <script type='text/javascript' src='script.js'></script>
+    </body>
+</html>
+
+//stylesheet.css
+canvas {
+    border: 1px dotted black;
+}
+
+//script.js
+var my_canvas = document.getElementById("canvas");
+var context = my_canvas.getContext("2d");
+context.beginPath();
+context.arc(75,75,35,0,2*Math.PI);
+context.stroke();
+context.fillStyle = "red";
+context.fillRect(75, 75, 50, 20);
+context.font = "30px Arial";
+context.fillStyle = "black";
+context.fillText("Hello", 15, 175)
+
