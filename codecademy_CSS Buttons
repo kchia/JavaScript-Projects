@@ -1,0 +1,23 @@
+//The goal of this project is to build a CSS-enhanced button.
+
+//index.html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons Galore!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+	</head>
+	<body>
+	    <div>My First Button!</div>
+	
+	</body>
+</html>
+
+//stylesheet.css
+div {
+    background-color: green;
+    border: 4px solid black;
+    height: 100px; 
+    width: 100px;
+    box-shadow: 5px 5px 5px;
+}
