@@ -1,0 +1,16 @@
+function SimpleAdding(num) { 
+  var myTotal = 0;
+  var numberArray = [];
+  for (var i = 1; i <= num; i++ ) {
+    numberArray.push(i);
+    myTotal += numberArray[i-1];
+  };
+    
+  return myTotal; 
+         
+}
+   
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+SimpleAdding(readline());           
+
